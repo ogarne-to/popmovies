@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/activity_movie_details"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.koltunowi.popmovie.activities.MovieDetailsActivity">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:transitionName="transition"/>
+
+
+
+    <ScrollView
+        android:id="@+id/sv_movies_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+
+        android:paddingTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:background="@android:color/white">
+
+            <include layout="@layout/sliding_pane_constraint"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_additional_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    tools:text="Drama, Comedy, Musical"/>
+                <TextView
+                    android:id="@+id/tv_runtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    tools:text="118 mins."/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_videos_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MovieDetailsHeading"
+                android:visibility="gone"
+                android:text="@string/movie_details_videos_heading"
+                />
+
+            <LinearLayout
+
+                android:id="@+id/ll_videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                />
+
+            <TextView
+                android:id="@+id/tv_reviews_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/MovieDetailsHeading"
+                android:visibility="gone"
+                android:text="@string/movie_details_heading_reviews"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"/>
+
+
+</FrameLayout>

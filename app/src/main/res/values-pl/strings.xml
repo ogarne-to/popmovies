@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PopMovies</string>
+    <string name="action_settings_label">Ustawienia</string>
+    <string name="movie_details_heading_reviews">Recenzje</string>
+    <string name="movie_details_release_date_label">Data premiery:</string>
+    <string name="movie_details_review_section_author_label">Autor:</string>
+    <string name="movie_details_videos_heading">Wideo</string>
+    <string name="pref_list_interval_label_1">1 godzina</string>
+    <string name="pref_list_interval_label_12">12 godzin</string>
+    <string name="pref_list_interval_label_3">3 godziny</string>
+    <string name="pref_list_interval_label_6">6 godzin</string>
+    <string name="pref_list_sync_interval_title">Częstotliwość synchronizacji</string>
+    <string name="pref_switch_sync_summary_off">Nie</string>
+    <string name="pref_switch_sync_summary_on">Tak</string>
+    <string name="toast_error_connectivity_problem">Wystąpił problem z łącznością</string>
+    <string name="toast_error_general_problem">Coś poszło nie tak</string>
+    <string name="avtivity_label_settings">Ustawienia</string>
+    <string name="pref_switch_sync_title">Synchronizuj ulubione</string>
+</resources>

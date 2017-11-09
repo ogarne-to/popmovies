@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_list_interval_labels">
+        <item>@string/pref_list_interval_label_1</item>
+        <item>@string/pref_list_interval_label_3</item>
+        <item>@string/pref_list_interval_label_6</item>
+        <item>@string/pref_list_interval_label_12</item>
+    </array>
+
+    <array name="pref_list_interval_values">
+        <item>@string/pref_list_interval_value_1</item>
+        <item>@string/pref_list_interval_value_3</item>
+        <item>@string/pref_list_interval_value_6</item>
+        <item>@string/pref_list_interval_value_12</item>
+
+    </array>
+
+
+</resources>

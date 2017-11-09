@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_switch_sync_key"
+        android:summaryOff="@string/pref_switch_sync_summary_off"
+        android:summaryOn="@string/pref_switch_sync_summary_on"
+        android:title="@string/pref_switch_sync_title"
+
+        />
+
+    <ListPreference
+        android:key="@string/pref_list_sync_interval_key"
+        android:dependency="@string/pref_switch_sync_key"
+        android:entries="@array/pref_list_interval_labels"
+        android:entryValues="@array/pref_list_interval_values"
+        android:defaultValue="@string/pref_list_interval_value_6"
+        android:title="@string/pref_list_sync_interval_title" />
+
+</PreferenceScreen>
